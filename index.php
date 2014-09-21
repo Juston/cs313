@@ -8,9 +8,10 @@
 <style>
 body {
 	margin:0;
-	padding:0;
+	padding:0 20px;
 	background-color:rgba(0,0,0,0.9);
 	color:white;
+	font-family: sans-serif;
 }
 
 </style>
