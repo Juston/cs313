@@ -17,7 +17,7 @@ body {
 #the_page {
 	height:100%;
 	width:100%;
-	position: absolute;
+	position: fixed;
 	background-color:white;
 	margin-left:-20px;
 	-webkit-animation: display_page 2s ease;
