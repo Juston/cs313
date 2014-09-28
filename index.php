@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Welcome to OpenShift</title>
+  <title>Everything BYU-I</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href="/css/styles.css" rel="stylesheet" type="text/css">
   <script src="/js/header.js" type="text/javascript"></script>
@@ -11,7 +11,7 @@
 </head>
 <body class="front-page">
 <header>
-	<h1>PHP Blitz</h1>
+	<h1>Everything BYU-I</h1>
 	<div id="menu_icon" class="closed" onclick="menu_animation()"></div>
 	<div id="menu">
 		<ul>
