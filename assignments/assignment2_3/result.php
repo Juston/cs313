@@ -27,7 +27,7 @@
 
         <?php
           if(!$_SESSION['survey']['complete']) {
-            echo '<form method="post" action="/assignments/"><input type="submit" value="Take Survey"></form>';
+            echo '<form method="post" action="."><input type="submit" value="Take Survey"></form>';
           }
         ?>
         <form method="post" action="/assignments/"><input type="submit" value="Return to Assignments Page"></form>
