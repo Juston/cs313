@@ -25,6 +25,11 @@
         <h2>Results</h2>
     		<?php include 'record.txt'; ?>
 
+        <?php
+          if(!$_SESSION['survey']['complete']) {
+            echo '<form method="post" action="/assignments/"><input type="submit" value="Take Survey"></form>';
+          }
+        ?>
         <form method="post" action="/assignments/"><input type="submit" value="Return to Assignments Page"></form>
     	</div>
     </section>
