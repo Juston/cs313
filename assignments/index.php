@@ -23,7 +23,7 @@
   <section class='container'>
     	<div id="front_page_text">
     		<h2>Assignments</h2>
-    		<p>Coming soon...</p>
+    		<p>First: <a href="/assignments/assignment2_3/" title="Assignment 2_3">Assignment 2_3</a></p>
         <img src="http://2.bp.blogspot.com/-t5XnI0YNfoQ/URFbiVBZQsI/AAAAAAAAAJQ/hjxV1d0SpLo/s1600/PHP_ninja.png" width="300" alt="">
     	</div>
   </section>
