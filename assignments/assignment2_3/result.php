@@ -16,7 +16,7 @@
 	<div id="menu">
 		<ul>
 			<li><a href="" title="">home</a></li>
-			<li><a href="/sandboxing/assignments/" title="">assignments</a></li>
+			<li><a href="/assignments/" title="">assignments</a></li>
 		</ul>
 	</div>
 </header>
@@ -24,6 +24,8 @@
     	<div id="front_page_text">
         <h2>Results</h2>
     		<?php include 'record.txt'; ?>
+
+        <form method="post" action="."><input type="submit" value="View Survey"></form>
     	</div>
     </section>
 

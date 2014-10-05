@@ -17,6 +17,8 @@ if($_POST['action'] == 'Submit') {
 
    include 'result.php';
 
+ } elseif($_POST['action'] == 'View Survey Results') {
+    include 'result.php';
  } else {
    include 'view.php';
 }

@@ -16,7 +16,7 @@
 	<div id="menu">
 		<ul>
 			<li><a href="" title="">home</a></li>
-			<li><a href="/sandboxing/assignments/" title="">assignments</a></li>
+			<li><a href="/assignments/" title="">assignments</a></li>
 		</ul>
 	</div>
 </header>
@@ -44,6 +44,9 @@
 
           <input type="submit" name="action" value="Submit">
         </form>
+
+
+        <form method="post" action="."><input type="submit" name="action" value="View Survey Results"></form>
     	</div>
     </section>
 
