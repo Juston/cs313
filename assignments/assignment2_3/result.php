@@ -25,7 +25,7 @@
         <h2>Results</h2>
     		<?php include 'record.txt'; ?>
 
-        <form method="post" action="."><input type="submit" value="View Survey"></form>
+        <form method="post" action="/assignments/"><input type="submit" value="Return to Assignments Page"></form>
     	</div>
     </section>
 

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
   
 if($_POST['action'] == 'Submit') {
 
@@ -15,9 +15,13 @@ if($_POST['action'] == 'Submit') {
     fwrite($fp, $savestring);
     fclose($fp); 
 
+   $_SESSION['survey']['complete'] = 'true'; 
    include 'result.php';
 
  } elseif($_POST['action'] == 'View Survey Results') {
+    $_SESSION['survey']['complete'] = 'true';
+    include 'result.php';
+ } elseif($_SESSION['survey']['complete']) {
     include 'result.php';
  } else {
    include 'view.php';
