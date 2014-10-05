@@ -19,7 +19,6 @@ if($_POST['action'] == 'Submit') {
    include 'result.php';
 
  } elseif($_POST['action'] == 'View Survey Results') {
-    $_SESSION['survey']['complete'] = 'true';
     include 'result.php';
  } elseif($_SESSION['survey']['complete']) {
     include 'result.php';
