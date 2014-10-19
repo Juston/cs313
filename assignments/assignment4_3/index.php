@@ -1,35 +1,16 @@
 <?php
   session_start();
-?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Assignments | Everything BYU-I</title>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link href="/css/styles.css" rel="stylesheet" type="text/css">
-  <script src="/js/header.js" type="text/javascript"></script>
+  include library.php';
+  include 'model.php';
 
-</head>
-<body class="front-page">
-<header>
-	<h1>Everything BYU-I</h1>
-	<div id="menu_icon" class="closed" onclick="menu_animation()"></div>
-  <div id="menu">
-    <ul>
-      <li><a href="/" title="">home</a></li>
-      <li><a href="/assignments/" title="">assignments</a></li>
-    </ul>
-  </div>
-</header>
-  <section class='container'>
-    	<div id="front_page_text">
-    		<h2>Everything BYU-I</h2>
-    		
-    	</div>
-  </section>
+if($_POST['action'] = "Manual Search" || $_POST['action'] = "Auto Search") {
+  var $fastfood_options = fastfoodOptions();
 
-</body>
-</html>
+  var $option_outputs = "";
+  foreach($fastfood_options as $option) {
+    $option_outputs .= '<p>Name: ' . $option['fastfoodName'] . '<br>' . $option['fastfoodLocation'] . '</p>;
+  }
+}
+
+  include 'view.php';
