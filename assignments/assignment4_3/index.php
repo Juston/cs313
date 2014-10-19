@@ -13,4 +13,8 @@
 //   }
 // }
 
+  if($_POST['action'] = "Manual Search" || $_POST['action'] = "Auto Search") {
+    var $option_outputs = "";
+  }
+
   include 'view.php';
