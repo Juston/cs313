@@ -26,9 +26,8 @@
 </header>
   <section class='container'>
     	<div id="front_page_text">
-    		<h2>Assignments</h2>
-    		<p><a href="/assignments/assignment2_3/" title="Assignment 2_3">Assignment 2_3</a></p>
-        <p><a href="/assignments/assignment4_3/" title="Assignment 4_3">Assignment 4_3</a></p>
+    		<h2>Everything BYU-I</h2>
+    		
     	</div>
   </section>
 
