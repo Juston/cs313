@@ -3,6 +3,7 @@
 
 //  include library.php';
 //  include 'model.php';
+  echo "crazy";
 
   if($_POST['action'] = "Manual Search") {
     // var $fastfood_options = fastfoodOptions();
@@ -23,3 +24,5 @@
 
   include 'view.php';
   exit;
+
+  ?>
