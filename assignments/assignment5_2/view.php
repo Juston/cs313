@@ -27,7 +27,7 @@
   <section class='container'>
     	<div id="front_page_text">
         <!-- Display Scriptures In Database -->
-        <h2>Scriptures</h2>
+        <h2>Scripture List</h2>
 
         <!-- Show Form -->
         <h2>Add Scripture</h2>
@@ -40,6 +40,8 @@
             <input type="text" name="verse" value=""><br>
           <label>Content</label><br>
             <textarea name="content"></textarea><br>
+
+          Related Topic<br>
           <input type="checkbox" name="check_faith">Faith<br>
           <input type="checkbox" name="check_sacrifice">Sacrifice<br>
           <input type="checkbox" name="check_charity">Charity<br>
