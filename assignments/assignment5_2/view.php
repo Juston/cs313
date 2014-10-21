@@ -40,9 +40,9 @@
             <input type="text" name="verse" value=""><br>
           <label>Content</label><br>
             <textarea name="content"></textarea><br>
-          <input type="checkbox" value="faith">Faith
-          <input type="checkbox" value="sacrifice">Sacrifice
-          <input type="checkbox" value="charity">Charity
+          <input type="checkbox" name="check_faith">Faith<br>
+          <input type="checkbox" name="check_sacrifice">Sacrifice<br>
+          <input type="checkbox" name="check_charity">Charity<br>
           <!--<input type="checkbox" value=""><input type="text" value="">-->
           <input type="submit" name="action" value="Add Scripture">
         </form>
