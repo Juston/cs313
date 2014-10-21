@@ -39,7 +39,8 @@
           <label>Verse</label><br>
             <input type="text" name="verse" value=""><br>
           <label>Content</label><br>
-            <input type="textarea" name="content" value=""><br>
+            <textarea name="content">
+            </textarea><br>
           <input type="submit" name="action" value="Add Scripture">
         </form>
     	</div>
