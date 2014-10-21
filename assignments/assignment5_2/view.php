@@ -30,16 +30,17 @@
 
 
         <!-- Show Form -->
-        Add Scripture
+        <h2>Add Scripture</h2>
         <form action="" method="post">
-          <label>Book</label>
-            <input type="text" value="">
-          <label>Chapter</label>
-            <input type="text" value="">
-          <label>Verse</label>
-            <input type="text" value="">
-          <label>Content</label>
-            <input type="textarea" value="">
+          <label>Book</label><br>
+            <input type="text" name="book" value=""><br>
+          <label>Chapter</label><br>
+            <input type="text" name="chapter" value=""><br>
+          <label>Verse</label><br>
+            <input type="text" name="verse" value=""><br>
+          <label>Content</label><br>
+            <input type="textarea" name="content" value=""><br>
+          <input type="submit" name="action" value="Add Scripture">
         </form>
     	</div>
   </section>
