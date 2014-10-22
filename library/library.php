@@ -40,7 +40,7 @@ function connect() {
      // Attempt to load database 
      try 
      { 
-         $db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword); 
+         $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword); 
          return $db; 
      } 
      catch (PDOException $ex) 
