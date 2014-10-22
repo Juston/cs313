@@ -1,16 +1,38 @@
 <?php
 
-function connect() {
-  $dns = 'mysql:host=127.9.69.130;dbname=127.9.69.130scriptures';
-  $username = 'admincDFxcWH';
-  $password = 'CvBaPCF-iKb8';
+function connect() {   
 
-  try {
-      $db = new PDO($dns, $username, $password);
-  } catch(PDOException $e) {
-      $error_message = $e->getMessage();
-      echo "<p>An error occured while connecting to the database: $error_message </p>";
-  } 
-  
-  return $db;
+  $dbHost = "127.9.69.130";
+  $dbPort = "3306";
+  $dbUser = "admincDFxcWH";
+  $dbPassword = "CvBaPCF-iKb8";
+
+     $dbName = "testdb"; 
+
+     $openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST'); 
+
+     if ($openShiftVar === null || $openShiftVar == "")
+     {
+          // Not in the openshift environment
+          //echo "Using local credentials: "; 
+          require("setLocalDatabaseCredentials.php");
+     }
+     else 
+     { 
+          // In the openshift environment
+          //echo "Using openshift credentials: "; 
+
+          $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
+          $dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT'); 
+          $dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
+          $dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
+     } 
+     //echo "host:$dbHost:$dbPort dbName:$dbName user:$dbUser password:$dbPassword<br >\n"; 
+
+     $db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword); 
+
+     return $db; 
+
+} 
+
 }
