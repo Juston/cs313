@@ -1,7 +1,6 @@
 <?php
 // include 'library.php';
 // include 'model.php';
-echo "nothing?";
 if($_POST['action'] == 'Submit') {
 	$book = $_POST['book'];
 	$chapter = $_POST['chapter'];
