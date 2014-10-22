@@ -1,7 +1,7 @@
 <?php
 
 function connect() {
-  $dns = 'mysql:host=localhost;dbname=scriptures';
+  $dns = 'mysql:host=127.9.69.130;dbname=127.9.69.130scriptures';
   $username = 'admincDFxcWH';
   $password = 'CvBaPCF-iKb8';
 
