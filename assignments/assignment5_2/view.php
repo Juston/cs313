@@ -58,7 +58,7 @@
               echo $topicOutput;
             }
           ?>
-          <!--<input type="checkbox" value=""><input type="text" value="">-->
+          <input type="checkbox" value=""><input type="text" value="">
           <input type="submit" name="action" value="Add Scripture">
         </form>
     	</div>
