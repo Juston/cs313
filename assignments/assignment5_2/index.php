@@ -15,7 +15,7 @@ if($_POST['action'] == 'Add Scripture') {
 	
 		if($_POST['newCheck']) {
 			$newTopic = $_POST['newTopic'];
-			$insertTopic = insertTopic($newTopic);
+			$insertTopic = insertNewTopic($newTopic);
 		}
 
 	} else {
