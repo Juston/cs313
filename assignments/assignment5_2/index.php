@@ -1,7 +1,7 @@
 <?php
 // include 'library.php';
 // include 'model.php';
-
+echo "nothing?";
 if($_POST['action'] == 'Submit') {
 	$book = $_POST['book'];
 	$chapter = $_POST['chapter'];
@@ -15,7 +15,6 @@ if($_POST['action'] == 'Submit') {
 	// } else {
 	// 	$error = '<p style="color:red">You cannot leave any of the fields empty!</p>';
 	// }
-	echo $book $chapter $verse $content;
 }
 
 
