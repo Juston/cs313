@@ -27,6 +27,9 @@
   <section class='container'>
     	<div id="front_page_text">
         <!-- Display Scriptures In Database -->
+        <?php if(!empty($error)) {
+          echo $error;
+        } ?>
         <h2>Scripture List</h2>
 
         <!-- Show Form -->
@@ -42,9 +45,9 @@
             <textarea name="content"></textarea><br>
 
           Related Topic<br>
-          <input type="checkbox" name="check_faith">Faith<br>
-          <input type="checkbox" name="check_sacrifice">Sacrifice<br>
-          <input type="checkbox" name="check_charity">Charity<br>
+          <input type="checkbox" name="check.faith">Faith<br>
+          <input type="checkbox" name="check.sacrifice">Sacrifice<br>
+          <input type="checkbox" name="check.charity">Charity<br>
           <!--<input type="checkbox" value=""><input type="text" value="">-->
           <input type="submit" name="action" value="Add Scripture">
         </form>
