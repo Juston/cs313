@@ -10,7 +10,7 @@ if($_POST['action'] == 'Add Scripture') {
 
 	if(!empty($book) && !empty($chapter) && !empty($verse) && !empty($content) && !empty($check)) {
 	//	$insertScripture = insertScripture($book, $chapter, $verse, $content);
-	echo "Whoot whoot!";
+	
 	//	if() {
 	//		$insertTopic = insertTopic();
 	// 	}
