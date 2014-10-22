@@ -26,7 +26,7 @@ if($_POST['action'] == 'Add Scripture') {
 $scriptureList = getScriptureList();
 $scriptureOutput = "";
 foreach($scriptureList as $scripture) {
-	$scriptureOutput .= "<p>" . $scripture['scripture_book'] . " " . $scripture['scripture_chapter'] . ":" . $scripture['scripture_verse'] . " - " . $scripture['scripture_content']; 
+	$scriptureOutput .= "<p><strong>" . $scripture['scripture_book'] . " " . $scripture['scripture_chapter'] . ":" . $scripture['scripture_verse'] . "</strong> - " . $scripture['scripture_content']; 
 }
 $topicList = getTopicList();
 $topicOutput = "";
