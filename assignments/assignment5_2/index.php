@@ -9,7 +9,7 @@ if($_POST['action'] == 'Add Scripture') {
 	$check = $_POST['check'];
 
 	if(!empty($book) && !empty($chapter) && !empty($verse) && !empty($content) && !empty($check)) {
-		$db - connect();
+		$db = connect();
 		// $insertScripture = insertScripture($book, $chapter, $verse, $content);
 	
 	//	if() {
