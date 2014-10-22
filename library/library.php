@@ -3,8 +3,8 @@
   function connect() {
     $dbHost = "";
     $dbPort = "";
-    $dbUser = "";
-    $dbPassword = "";
+    $dbUser = "admincDFxcWH";
+    $dbPassword = "CvBaPCF-iKb8";
 
        $dbName = "testdb"; 
 
