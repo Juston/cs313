@@ -35,7 +35,11 @@
           echo $error;
         } ?>
         <h2>Scripture List</h2>
-
+        <?php
+          if(!empty($scriptureOutput)) {
+            echo $scriptureOutput;
+          }
+        ?>
         <!-- Show Form -->
         <h2>Add Scripture</h2>
         <form action="" method="post">
