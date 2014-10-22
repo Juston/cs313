@@ -52,7 +52,7 @@ function insertNewTopic($topicName) {
 function getScriptureList() {
 	$db = connect();
 	$query = "SELECT * 
-		 FROM ";
+		 FROM scriptures";
 	$list = $db->query($query);
 	$lists = $list->fetchAll();
 	
@@ -62,7 +62,7 @@ function getScriptureList() {
 function getTopicList() {
 	$db = connect();
 	$query = "SELECT * 
-		 FROM ";
+		 FROM topics";
 	$list = $db->query($query);
 	$lists = $list->fetchAll();
 	
