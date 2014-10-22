@@ -12,7 +12,7 @@ if($_POST['action'] == 'Submit') {
 	// 	$insertScripture = insertScripture($book, $chapter, $verse, $content);
 
 	// } else {
-	// 	$error = '<p style="color:red">You cannot leave any of the fields empty!</p>';
+		$error = '<p style="color:red">You cannot leave any of the fields empty!</p>';
 	// }
 }
 
