@@ -15,7 +15,7 @@ if($_POST['action'] == 'Submit') {
 	// } else {
 	// 	$error = '<p style="color:red">You cannot leave any of the fields empty!</p>';
 	// }
-
+	echo $book $chapter $verse $content;
 }
 
 
