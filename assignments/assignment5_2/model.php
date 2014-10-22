@@ -2,19 +2,19 @@
 
 function insertScripture($scriptureBook, $scriptureChapter, $scriptureVerse, $scriptureContent) {
 	$db = connect();
-    $sql = 'INSERT INTO scriptures (scripture_book, scripture_chapter, scripture_verse, scripture_content) '
-            . 'VALUES(:scriptureBook, :scriptureChapter, :scriptureVerse, :scriptureContent)';
-    $user = 'user';
-    $stmt = $db->prepare($sql);
-    $stmt->bindValue(':scriptureBook', $scriptureBook);
-    $stmt->bindValue(':scriptureChapter', $scriptureChapter);
-    $stmt->bindValue(':scriptureVerse', $scriptureVerse);
-    $stmt->bindValue(':scriptureContent', $scriptureContent);
-    $stmt->execute();
-    $insertResult = $stmt->rowCount();
-    $stmt->closeCursor();
+    // $sql = 'INSERT INTO scriptures (scripture_book, scripture_chapter, scripture_verse, scripture_content) '
+    //         . 'VALUES(:scriptureBook, :scriptureChapter, :scriptureVerse, :scriptureContent)';
+    // $user = 'user';
+    // $stmt = $db->prepare($sql);
+    // $stmt->bindValue(':scriptureBook', $scriptureBook);
+    // $stmt->bindValue(':scriptureChapter', $scriptureChapter);
+    // $stmt->bindValue(':scriptureVerse', $scriptureVerse);
+    // $stmt->bindValue(':scriptureContent', $scriptureContent);
+    // $stmt->execute();
+    // $insertResult = $stmt->rowCount();
+    // $stmt->closeCursor();
     
-    return $insertResult;
+    // return $insertResult;
 }
 
 function insertManytoMany() {
