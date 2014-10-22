@@ -25,7 +25,12 @@ if($_POST['action'] == 'Add Scripture') {
 $scriptureList = getScriptureList();
 $scriptureOutput = "";
 foreach($scriptureList as $scripture) {
-	$scriptureOutput .= "<p>" . $scripture['scripture_book'] . " " . $scripture['scripture_chapter'] . ":" . $scripture['scripture_verse']; 
+	$scriptureOutput .= "<p>" . $scripture['scripture_book'] . " " . $scripture['scripture_chapter'] . ":" . $scripture['scripture_verse'] . " - " . $scripture['scripture_content']; 
+}
+$topicList = getTopicList();
+$topicOutput = "";
+foreach($topicList as $topic) {
+	$topicOutput .= '<input type="checkbox" name="check[]">' . $topic['topic_name'] . '<br>';
 }
 
 

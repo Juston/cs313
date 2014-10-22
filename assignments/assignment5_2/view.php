@@ -53,9 +53,11 @@
             <textarea name="content"></textarea><br>
 
           Related Topic<br>
-          <input type="checkbox" name="check[]">Faith<br>
-          <input type="checkbox" name="check[]">Sacrifice<br>
-          <input type="checkbox" name="check[]">Charity<br>
+          <?php
+            if(!empty($topicOutput)) {
+              echo $topicOutput;
+            }
+          ?>
           <!--<input type="checkbox" value=""><input type="text" value="">-->
           <input type="submit" name="action" value="Add Scripture">
         </form>
