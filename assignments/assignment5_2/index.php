@@ -1,5 +1,5 @@
 <?php
-// include 'library.php';
+include '/library/library.php';
 // include 'model.php';
 if($_POST['action'] == 'Add Scripture') {
 	$book = $_POST['book'];
@@ -10,9 +10,13 @@ if($_POST['action'] == 'Add Scripture') {
 
 	// if(!empty($book) && !empty($chapter) && !empty($verse) && !empty($content) && !empty($check)) {
 	// 	$insertScripture = insertScripture($book, $chapter, $verse, $content);
+	
+	//	if() {
+	//		$insertTopic = insertTopic();
+	// 	}
 
 	// } else {
-		$error = '<p style="color:red">You cannot leave any of the fields empty!</p>';
+		$error = '<p style="color:red">You cannot leave any of the fields empty! No scripture was added.</p>';
 	// }
 }
 
