@@ -1,6 +1,7 @@
 <?php
 include '/library/library.php';
-echo connect();
+$db = connect();
+echo $db;
 // include 'model.php';
 if($_POST['action'] == 'Add Scripture') {
 	$book = $_POST['book'];
