@@ -7,7 +7,7 @@ function connect() {
   $dbUser = "admincDFxcWH";
   $dbPassword = "CvBaPCF-iKb8";
 
-     $dbName = "testdb"; 
+     $dbName = "scriptures"; 
 
      $openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST'); 
 
