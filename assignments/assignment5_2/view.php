@@ -45,9 +45,9 @@
             <textarea name="content"></textarea><br>
 
           Related Topic<br>
-          <input type="checkbox" name="check.faith">Faith<br>
-          <input type="checkbox" name="check.sacrifice">Sacrifice<br>
-          <input type="checkbox" name="check.charity">Charity<br>
+          <input type="checkbox" name="check[]">Faith<br>
+          <input type="checkbox" name="check[]">Sacrifice<br>
+          <input type="checkbox" name="check[]">Charity<br>
           <!--<input type="checkbox" value=""><input type="text" value="">-->
           <input type="submit" name="action" value="Add Scripture">
         </form>
