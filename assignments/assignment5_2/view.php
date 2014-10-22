@@ -28,6 +28,9 @@
     	<div id="front_page_text">
         <!-- Display Scriptures In Database -->
         <?php
+        if(!empty($success)) {
+          echo $success;
+        }
         if(!empty($error)) {
           echo $error;
         } ?>

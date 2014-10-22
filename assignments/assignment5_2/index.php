@@ -11,7 +11,7 @@ if($_POST['action'] == 'Add Scripture') {
 	if(!empty($book) && !empty($chapter) && !empty($verse) && !empty($content) && !empty($check)) {
 		$insertScripture = insertScripture($book, $chapter, $verse, $content);
 
-	//	$success = "<p style="color:green">Scripture added.</p>";
+		$success = '<p style="color:green">Scripture added.</p>';
 	
 	//	if() {
 	//		$insertTopic = insertTopic();
