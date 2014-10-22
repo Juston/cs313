@@ -31,8 +31,6 @@ function connect() {
 
      $db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword); 
 
-     return $db; 
-
-} 
+     return $db;
 
 }
