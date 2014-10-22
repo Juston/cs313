@@ -2,8 +2,8 @@
 
 function connect() {   
 
-  $dbHost = "127.9.69.130";
-  $dbPort = "3306";
+  $dbHost = "http://php-juston.rhcloud.com";
+  $dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
   $dbUser = "admincDFxcWH";
   $dbPassword = "CvBaPCF-iKb8";
 
