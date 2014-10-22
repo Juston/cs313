@@ -13,9 +13,10 @@ if($_POST['action'] == 'Add Scripture') {
 
 		$success = '<p style="color:green">Scripture added!</p>';
 	
-	//	if() {
-	//		$insertTopic = insertTopic();
-	// 	}
+		if($_POST['newCheck']) {
+			$newTopic = $_POST['newTopic'];
+			$insertTopic = insertTopic($newTopic);
+		}
 
 	} else {
 		$error = '<p style="color:red">You cannot leave any of the fields empty! No scripture was added.</p>';
