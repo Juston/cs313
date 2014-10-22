@@ -2,35 +2,53 @@
 
 function connect() {   
 
-  $dbHost = "http://php-juston.rhcloud.com";
-  $dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
-  $dbUser = "admincDFxcWH";
-  $dbPassword = "CvBaPCF-iKb8";
-
+  // Check for OpenShift environment var and connect accordingly 
+     $openShiftCheck = getenv('OPENSHIFT_MYSQL_DB_HOST'); 
      $dbName = "scriptures"; 
-
-     $openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST'); 
-
-     if ($openShiftVar === null || $openShiftVar == "")
-     {
-          // Not in the openshift environment
-          //echo "Using local credentials: "; 
-          require("setLocalDatabaseCredentials.php");
-     }
+ 
+ 
+     if ($openShiftCheck === null || $openShiftCheck == "") 
+     { 
+         // Use Local 
+         // TO DO: Add your own local credintials 
+         require("setLocalDatabaseCredentials.php"); 
+     } 
      else 
      { 
-          // In the openshift environment
-          //echo "Using openshift credentials: "; 
+         // Use OpenShift 
+ 
 
-          $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
-          $dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT'); 
-          $dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
-          $dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
+        // Values for across domains 
+         $crossDomain = true; 
+         if ($crossDomain) 
+         { 
+             $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST'); 
+             $dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT'); 
+             $dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME'); 
+             $dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');         
+         } 
+         else 
+         {     
+             // Values for domain 
+             $dbHost = "http://php-juston.rhcloud.com/"; 
+             $dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT'); 
+             $dbUser = 'admincDFxcWH'; 
+             $dbPassword = 'CvBaPCF-iKb8';   
+         }    
      } 
-     echo "host:$dbHost:$dbPort dbName:$dbName user:$dbUser password:$dbPassword<br >\n"; 
+      
+     // Attempt to load database 
+     try 
+     { 
+         $db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword); 
+         return $db; 
+     } 
+     catch (PDOException $ex) 
+     { 
+         echo "Error connecting to database.<br>"; 
+         echo "Error: " . $ex->getMessage() . "<br>"; 
+         die(); 
+     } 
 
-     // $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword); 
-
-     return true;
 
 }
