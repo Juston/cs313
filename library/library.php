@@ -27,10 +27,10 @@ function connect() {
           $dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
           $dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
      } 
-     //echo "host:$dbHost:$dbPort dbName:$dbName user:$dbUser password:$dbPassword<br >\n"; 
+     echo "host:$dbHost:$dbPort dbName:$dbName user:$dbUser password:$dbPassword<br >\n"; 
 
-     $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword); 
+     // $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword); 
 
-     return $db;
+     return true;
 
 }
