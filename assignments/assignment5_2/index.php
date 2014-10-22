@@ -1,7 +1,7 @@
 <?php
 // include 'library.php';
 // include 'model.php';
-if($_POST['action'] == 'Submit') {
+if($_POST['action'] == 'Add Scripture') {
 	$book = $_POST['book'];
 	$chapter = $_POST['chapter'];
 	$verse = $_POST['verse'];
