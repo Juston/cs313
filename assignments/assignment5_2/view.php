@@ -27,7 +27,11 @@
   <section class='container'>
     	<div id="front_page_text">
         <!-- Display Scriptures In Database -->
-        <?php if(!empty($error)) {
+        <?php 
+        if(!empty($success)) {
+          echo $success;
+        }
+        if(!empty($error)) {
           echo $error;
         } ?>
         <h2>Scripture List</h2>
