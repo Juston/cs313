@@ -37,7 +37,7 @@ function insertManytoMany() {
 
 function insertNewTopic($topicName) {
 	$db = connect();
-    $sql = 'INSERT INTO users (topic_name) '
+    $sql = 'INSERT INTO topics (topic_name) '
             . 'VALUES(:topicName)';
     $user = 'user';
     $stmt = $db->prepare($sql);
