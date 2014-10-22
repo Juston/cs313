@@ -8,16 +8,16 @@ if($_POST['action'] == 'Add Scripture') {
 	$content = $_POST['content'];
 	$check = $_POST['check'];
 
-	// if(!empty($book) && !empty($chapter) && !empty($verse) && !empty($content) && !empty($check)) {
-	// 	$insertScripture = insertScripture($book, $chapter, $verse, $content);
+	if(!empty($book) && !empty($chapter) && !empty($verse) && !empty($content) && !empty($check)) {
+		$insertScripture = insertScripture($book, $chapter, $verse, $content);
 	
 	//	if() {
 	//		$insertTopic = insertTopic();
 	// 	}
 
-	// } else {
+	} else {
 		$error = '<p style="color:red">You cannot leave any of the fields empty! No scripture was added.</p>';
-	// }
+	}
 }
 
 
