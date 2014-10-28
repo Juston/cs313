@@ -10,7 +10,7 @@ session_start();
 
 		if(checkPassword($username, $password)) {
 			$_SESSION['userName'] = $username;
-			header("Location: /");
+			header("Location: /assignments/assignment6_2/home_page/");
 			exit;
 		}
 		else {
