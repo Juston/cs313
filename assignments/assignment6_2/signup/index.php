@@ -5,7 +5,7 @@ session_start();
 	include "model.php";
 
 	if($_POST['action'] == "Join") {
-		$userName = $_POST['userName'];
+		$userName = $_POST['username'];
 		$password1 = $_POST['password1'];
 		$password2 = $_POST['password2'];
 
