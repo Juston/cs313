@@ -10,10 +10,10 @@ session_start();
 		$password2 = $_POST['password2'];
 
 		if($password1 != $password2) {
-			$error['passwordMatch'] = "Sorry, but the passwords did not match. I bring this up, because it is your fault.";
+			$errors['passwordMatch'] = "Sorry, but the passwords did not match. I bring this up, because it is your fault.";
 		}
 		if(checkUser($userName)) {
-			$error['userName'] = "Sorry, but this Username already exists. Pitty, I know.";
+			$errors['userName'] = "Sorry, but this Username already exists. Pitty, I know.";
 		}
 
 		if(!empty($errors)) {
@@ -22,7 +22,8 @@ session_start();
 		} else {
 			$inserted = insertNewUser($userName, $password1);
 			if($inserted) {
-				header("Location: /assignments/assignment6_2/signin/");
+				echo "Woot woot!";
+				// header("Location: /assignments/assignment6_2/signin/");
 				exit;
 			}
 			else {

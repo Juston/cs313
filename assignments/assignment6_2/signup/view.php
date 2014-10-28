@@ -22,6 +22,11 @@
 </header>
   <section class='container'>
     	<h2>Sign Up</h2>
+      <?php if(!empty($errors)) {
+        foreach($errors as $error) {
+          echo $error;
+        }
+      } ?>
       <form action="." method="post">
         <label>Username</label><br>
         <input type="text"  pattern=".{5,25}" name="username" required><br>
