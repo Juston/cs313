@@ -23,12 +23,12 @@
   <section class='container'>
     	<h2>Sign Up</h2>
       <form action="." method="post">
-        <label>Username</label>
-        <input type="text"  pattern=".{5,25}" name="username" required>
-        <label>Password</label>
-        <input type="password" pattern=".{7,25}" name="password1" required>
-        <label>Verify Password</label>
-        <input type="password" pattern=".{7,25}" name="password2" required>
+        <label>Username</label><br>
+        <input type="text"  pattern=".{5,25}" name="username" required><br>
+        <label>Password</label><br>
+        <input type="password" pattern=".{7,25}" name="password1" required><br>
+        <label>Verify Password</label><br>
+        <input type="password" pattern=".{7,25}" name="password2" required><br>
         <input type="submit" name="action" value="Join">
       </form>
   </section>

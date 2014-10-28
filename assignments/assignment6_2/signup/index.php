@@ -11,24 +11,22 @@ session_start();
 
 		if($password1 != $password2) {
 			$error['passwordMatch'] = "Sorry, but the passwords did not match. I bring this up, because it is your fault.";
+			include 'view.php';
+			exit
 		}
 		if(checkUser($userName)) {
 			$error['userName'] = "Sorry, but this Username already exists. Pitty, I know.";
-		}
-
-		if(!empty($errors)) {
 			include 'view.php';
+			exit
+		}
+		$inserted = insertNewUser($userName, $password1);
+		if($inserted) {
+			header("Location: /assignments/assignment6_2/signin/");
 			exit;
-		} else {
-			$inserted = insertNewUser($userName, $password1);
-			if($inserted) {
-				header("Location: /assignments/assignment6_2/signin/");
-				exit;
-			}
-			else {
-				include "view.php";
-				exit;
-			}
+		}
+		else {
+			include "view.php";
+			exit;
 		}
 	}
 
