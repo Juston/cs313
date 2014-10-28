@@ -17,24 +17,19 @@ session_start();
 		}
 
 		if(!empty($errors)) {
-			echo 'poop!';
 			include 'view.php';
 			exit;
 		} else {
 			$inserted = insertNewUser($userName, $password1);
 			if($inserted) {
-				echo "Woot woot!";
-				// header("Location: /assignments/assignment6_2/signin/");
+				header("Location: /assignments/assignment6_2/signin/");
 				exit;
 			}
 			else {
-				echo "failed to add";
 				include "view.php";
 				exit;
 			}
 		}
-	} else {
-		echo "really?";
 	}
 
 	include "view.php";
