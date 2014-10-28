@@ -2,9 +2,9 @@
 
 function checkPassword($username, $password) {
 	$db = connect();
-    $sql = 'SELECT userPassword FROM users WHERE userEmail = :email';
+    $sql = 'SELECT userPassword FROM users WHERE userName = :username';
     $stmt = $db->prepare($sql);
-    $stmt->bindValue(':email', $email);
+    $stmt->bindValue(':username', $username);
     $stmt->execute();
     $hashed = $stmt->fetch();
     $hashedPassword = $hashed['userPassword'];
