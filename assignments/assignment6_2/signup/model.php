@@ -17,8 +17,8 @@ function insertNewUser($userName, $password) {
 	$db = connect();
 	$sql = "INSERT INTO users (userName, userPassword) VALUES(:userName, :password)";
 	$stmt = $db->prepare($sql);
-	$stmt->bindValue(':userName', $userName);
-	$stmt->bindValue(':password', $hashedPassword);
+	$stmt->bindValue(':userName', "$userName");
+	$stmt->bindValue(':password', "$hashedPassword");
 	$stmt->execute();
 	$insertResult = $stmt->rowCount();
     $stmt->closeCursor();
