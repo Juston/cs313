@@ -1,3 +1,8 @@
 <?php
+session_start();
 
-echo 'signin page';
+	include $_SERVER['DOCUMENT_ROOT'] . "library/library.php";	
+	include "model.php";
+
+
+	include 'view.php';
