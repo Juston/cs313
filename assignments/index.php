@@ -30,7 +30,7 @@
     		<p><a href="/assignments/assignment2_3/" title="Assignment 2_3">Assignment 2_3</a></p>
         <p><a href="/assignments/assignment4_3/" title="Assignment 4_3">Assignment 4_3</a></p>
         <p><a href="/assignments/assignment5_2/" title="Assignment 5_2">Assignment 5_2</a></p>
-        <p><a href="/assignments/assignment6_2/" title="Assignment 6_2">Assignment 6_2</a></p>
+        <p><a href="/assignments/assignment6_2/signup/" title="Assignment 6_2">Assignment 6_2</a></p>
     	</div>
   </section>
 
