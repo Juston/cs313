@@ -1,8 +1,8 @@
 <?php
 $session_start();
 
-//	include $_SERVER['DOCUMENT_ROOT'] . /libraries.php;	
-//	include "model.php";
+	include $_SERVER['DOCUMENT_ROOT'] . "library/library.php";	
+	include "model.php";
 
 	if($_POST['action'] == "Join") {
 		$userName = $_POST['userName'];
@@ -23,13 +23,14 @@ $session_start();
 			$inserted = insertNewUser($userName, $password1);
 			if($inserted) {
 				header("Location: /assignments/assignment6_2/signin/");
+				exit;
 			}
 			else {
 				include "view.php";
 				exit;
 			}
 		}
-	} else {
-		include "view.php";
-		exit;
 	}
+
+	include "view.php";
+	exit;	
