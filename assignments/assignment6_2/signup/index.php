@@ -1,7 +1,7 @@
 <?php
 $session_start();
 	
-	include "model.php";
+	// include "model.php";
 
 	if($_POST['action'] == "Join") {
 		$userName = $_POST['userName'];
