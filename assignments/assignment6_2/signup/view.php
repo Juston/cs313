@@ -33,6 +33,7 @@
         <input type="password" pattern=".{7,25}" name="password1" required>
         <label>Verify Password</label>
         <input type="password" pattern=".{7,25}" name="password2" required>
+        <input type="submit" name="action" value="Join">
       </form>
   </section>
 
