@@ -1,5 +1,5 @@
 <?php
-$session_start();
+session_start();
 
 	include $_SERVER['DOCUMENT_ROOT'] . "library/library.php";	
 	include "model.php";
