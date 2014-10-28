@@ -1,7 +1,8 @@
 <?php
 $session_start();
-	
-	include "model.php";
+
+//	include $_SERVER['DOCUMENT_ROOT'] . /libraries.php;	
+//	include "model.php";
 
 	if($_POST['action'] == "Join") {
 		$userName = $_POST['userName'];
