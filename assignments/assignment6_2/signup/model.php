@@ -2,7 +2,7 @@
 
 function checkUser($userName) {
 	$db = connect();
-	$sql = "SELECT userName FROM users WHERE userName = $userName";
+	$sql = "SELECT userName FROM users WHERE userName = '$userName'";
 	$result = $db->query($sql);
 	$result = $result->fetchAll();
 	
