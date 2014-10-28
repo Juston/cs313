@@ -8,7 +8,4 @@ function checkPassword($username, $password) {
     $stmt->execute();
     $hashed = $stmt->fetch();
     $hashedPassword = $hashed['userPassword'];
-    return crypt($password, $hashedPassword) == $hashedPassword;
-	
-	return $result;
-}
+    return crypt($password, $hashedPassword) == $hashedPassword;}
