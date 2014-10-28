@@ -32,6 +32,8 @@ session_start();
 				exit;
 			}
 		}
+	} else {
+		echo "really?";
 	}
 
 	include "view.php";
