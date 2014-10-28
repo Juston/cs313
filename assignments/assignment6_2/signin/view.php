@@ -21,6 +21,7 @@
   </div>
 </header>
   <section class='container'>
+    <div id="front_page_text">
     	<h2>Sign In</h2>
       <?php if(!empty($errors)) {
         foreach($errors as $error) {
@@ -29,9 +30,10 @@
       } ?>
       <form action="." method="post">
         <input type="text"  pattern=".{5,25}" name="username" placeholder="Username" required><br>
-        <input type="password" pattern=".{7,25}" name="password1" placeholder="password" required><br>
+        <input type="password" pattern=".{7,25}" name="password" placeholder="password" required><br>
         <input type="submit" name="action" value="Sign In">
       </form>
+    </div>
   </section>
 
 </body>

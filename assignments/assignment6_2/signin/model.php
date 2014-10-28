@@ -1,13 +1,5 @@
 <?php
 
-function checkUser($userName) {
-	$db = connect();
-	$sql = "SELECT userName FROM users WHERE userName = '$userName'";
-	$result = $db->query($sql);
-	$result = $result->fetchAll();
-	
-	return $result;
-}
 function checkPassword($username, $password) {
 	$db = connect();
     $sql = 'SELECT userPassword FROM users WHERE userEmail = :email';
