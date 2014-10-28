@@ -28,6 +28,7 @@ session_start();
 				exit;
 			}
 			else {
+				echo "failed to add";
 				include "view.php";
 				exit;
 			}
