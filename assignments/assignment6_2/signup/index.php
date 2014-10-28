@@ -17,6 +17,7 @@ session_start();
 		}
 
 		if(!empty($errors)) {
+			echo 'poop!';
 			include 'view.php';
 			exit;
 		} else {
