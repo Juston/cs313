@@ -11,7 +11,7 @@
 </head>
 <body class="front-page">
 <header>
-	<h1>Signing Up | Everything BYU-I</h1>
+	<h1>Signing In | Everything BYU-I</h1>
 	<div id="menu_icon" class="closed" onclick="menu_animation()"></div>
   <div id="menu">
     <ul>

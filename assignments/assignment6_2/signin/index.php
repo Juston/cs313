@@ -10,7 +10,11 @@ session_start();
 
 		if(checkPassword($username, $password)) {
 			$_SESSION['userName'] = $userName;
-			header("location: /assingments/assingment6_2/home_page/");
+			header("Location: /assingments/assingment6_2/home_page/");
+			exit;
+		}
+		else {
+			echo "poop!";
 		}
 	}
 
