@@ -9,7 +9,7 @@ session_start();
 		$password = $_POST['password'];
 
 		if(checkPassword($username, $password)) {
-			$_SESSION['userName'] = $userName;
+			$_SESSION['userName'] = $username;
 			header("Location: /assingments/assingment6_2/home_page/");
 			exit;
 		}
@@ -19,3 +19,4 @@ session_start();
 	}
 
 	include 'view.php';
+	exit;
