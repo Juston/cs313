@@ -10,10 +10,10 @@ session_start();
 		$password2 = $_POST['password2'];
 
 		if($password1 != $password2) {
-			$errors['passwordMatch'] = "Sorry, but the passwords did not match. I bring this up, because it is your fault.";
+			$errors['passwordMatch'] = "<p style='color:red;'>Sorry, but the passwords did not match. I bring this up, because it is your fault.</p>";
 		}
 		if(checkUser($userName)) {
-			$errors['userName'] = "Sorry, but this Username already exists. Pitty, I know.";
+			$errors['userName'] = "<p style='color:red;'>Sorry, but this Username already exists. Pitty, I know.</p>";
 		}
 
 		if(!empty($errors)) {
