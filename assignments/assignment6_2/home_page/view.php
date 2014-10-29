@@ -28,7 +28,7 @@
           echo $error;
         }
       } ?>
-	I hope you are <?php echo $_SESSION['userName']; ?>, else this is awkward.<br>
+	I hope you are <strong><?php echo $_SESSION['userName']; ?></strong>, else this is awkward.<br><br>
 	<form method="post" action=".">
 		<input type="submit" name="action" value="Sign Out">
 	</form>
