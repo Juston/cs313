@@ -4,7 +4,7 @@ session_start();
 		header('Location: /assignments/assignment6_2/signin/');
 		exit;
 	}
-	if($_POST['action'] = "Sign Out") {
+	if($_POST['action'] == "Sign Out") {
 		session_destroy();
 		header('Location: /assignments/assignment6_2/signin/');
 		exit;
