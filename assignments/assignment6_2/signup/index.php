@@ -15,7 +15,7 @@ session_start();
 		if(checkUser($userName)) {
 			$errors['userName'] = "<p style='color:red;'>Sorry, but this Username already exists. Pitty, I know.</p>";
 		}
-		if (preg_match('/[A-Z]+[a-z]+[0-9]+/', $password1)) {
+		if (!preg_match('/[A-Z]+[a-z]+[0-9]+/', $password1)) {
 			$errors['passwordReqs'] = "<p style='color:red;'>Sorry, but your password needs 'upper' case and 'lower' case characters along with a 'number'.</p>";
 		}
 
