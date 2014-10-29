@@ -11,7 +11,7 @@
 </head>
 <body class="front-page">
 <header>
-	<h1>Signing Up | Everything BYU-I</h1>
+	<h1>Home | Everything BYU-I</h1>
 	<div id="menu_icon" class="closed" onclick="menu_animation()"></div>
   <div id="menu">
     <ul>
@@ -22,13 +22,13 @@
 </header>
   <section class='container'>
     <div id="front_page_text">
-    	<h2>Sign Up</h2>
+    	<h2>Welcome</h2>
       <?php if(!empty($errors)) {
         foreach($errors as $error) {
           echo $error;
         }
       } ?>
-	Welcome <?php echo $_SESSION['userName']; ?>
+	I hope you are <?php echo $_SESSION['userName']; ?>, else this is awkward.<br>
 	<form method="post" action=".">
 		<input type="submit" name="action" value="Sign Out">
 	</form>
