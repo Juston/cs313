@@ -37,7 +37,7 @@
         <input type="password" pattern=".{7,25}" name="password2" required><br>
         <input type="submit" name="action" value="Join">
       </form>
-      <p>Already a member? <a href="/assignment/assignment6_2/signin/">Sign in</a></p>
+      <p>Already a member? <a href="/assignments/assignment6_2/signin/">Sign in</a></p>
     </div>
   </section>
 
